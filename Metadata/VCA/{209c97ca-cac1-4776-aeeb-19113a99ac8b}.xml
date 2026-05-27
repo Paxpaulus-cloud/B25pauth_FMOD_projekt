@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="MixerVCA" id="{bf891254-961a-472b-bee2-9a32bedd34c2}">
+	<object class="MixerVCA" id="{209c97ca-cac1-4776-aeeb-19113a99ac8b}">
 		<property name="name">
-			<value>3D Event</value>
+			<value>SFX</value>
 		</property>
 		<relationship name="mixer">
 			<destination>{3aad35ae-c340-410b-9bc5-f664282216ef}</destination>
