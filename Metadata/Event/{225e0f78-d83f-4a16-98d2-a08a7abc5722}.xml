@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{225e0f78-d83f-4a16-98d2-a08a7abc5722}">
+		<property name="note">
+			<value>Oneshot Happystinger
+</value>
+		</property>
 		<property name="name">
 			<value>Nested Event Stinger Happy</value>
 		</property>
@@ -8,7 +12,7 @@
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{7c9f6253-e870-4ffe-8e0a-833b7d28b7ad}</destination>
+			<destination>{74e01d38-76a0-41cb-a993-92f3cdc7e9ba}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{bff87228-6b0e-4f83-8eda-16aa6786af14}</destination>
@@ -59,6 +63,9 @@
 	<object class="EventAutomatableProperties" id="{71bf6cc7-e259-468d-af41-10625f1f0e33}" />
 	<object class="MarkerTrack" id="{47b6fd7b-8153-4107-a523-2dce18ad4f94}" />
 	<object class="GroupTrack" id="{b7cbb328-8163-4491-a016-fdbb96457e89}">
+		<relationship name="automationTracks">
+			<destination>{d7cf2d3f-b4eb-49e9-8583-50430a019178}</destination>
+		</relationship>
 		<relationship name="modules">
 			<destination>{9ef75c01-c09c-4c90-ae07-aa59db50728a}</destination>
 		</relationship>
@@ -93,6 +100,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{89ebb003-3ef2-4ce7-b2cc-9ba83b0fd1b5}" />
+	<object class="AutomationTrack" id="{d7cf2d3f-b4eb-49e9-8583-50430a019178}">
+		<relationship name="automator">
+			<destination>{7f4cd0ff-3575-4905-9475-d7636fc97293}</destination>
+		</relationship>
+	</object>
 	<object class="MultiSound" id="{9ef75c01-c09c-4c90-ae07-aa59db50728a}">
 		<property name="length">
 			<value>0.5</value>
@@ -100,6 +112,9 @@
 		<property name="pitch">
 			<value>3.4000001</value>
 		</property>
+		<relationship name="automators">
+			<destination>{7f4cd0ff-3575-4905-9475-d7636fc97293}</destination>
+		</relationship>
 		<relationship name="sounds">
 			<destination>{fc7f44d2-ff01-4034-bc72-8e6b1054f187}</destination>
 			<destination>{198118c6-ae60-46ac-bfff-2070d1565421}</destination>
@@ -140,6 +155,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{e5dfea67-22a9-491a-a039-8cc90f1327f5}" />
 	<object class="MixerBusFader" id="{2e36000f-181e-4814-acd0-8f5434f6eddd}" />
+	<object class="Automator" id="{7f4cd0ff-3575-4905-9475-d7636fc97293}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>pitch</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{727b3fb8-67e9-47b6-ac09-41860c1e98c1}</destination>
+		</relationship>
+	</object>
 	<object class="SingleSound" id="{fc7f44d2-ff01-4034-bc72-8e6b1054f187}">
 		<relationship name="audioFile">
 			<destination>{c84f883f-87e8-42ea-bccc-37823d87fe19}</destination>
@@ -165,6 +188,15 @@
 	</object>
 	<object class="MixerBusPanner" id="{66ab6a3a-bfe1-4dbe-b0e9-30f93c810d83}" />
 	<object class="MixerBusFader" id="{739c6e77-ddca-45a0-9150-c803d9f80e05}" />
+	<object class="AutomationCurve" id="{727b3fb8-67e9-47b6-ac09-41860c1e98c1}">
+		<relationship name="parameter">
+			<destination>{df681bd9-3993-459f-a5cb-1426430fc453}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{d76aa8e1-e3ab-40c1-b227-5718bf74d4d2}</destination>
+			<destination>{fedf3270-8c6d-4bff-a715-46402d06e89e}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{ae313505-7ca2-466a-bd23-52855502b9a3}" />
 	<object class="Sidechain" id="{53343f8f-5cc2-4046-ad78-67ebb7288865}" />
 	<object class="MixerSend" id="{ef41ac63-9f46-425b-b786-4d2b4befe18a}">
@@ -176,4 +208,20 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{72e9fb4e-0f6c-402f-8440-68037e9da704}" />
+	<object class="AutomationPoint" id="{d76aa8e1-e3ab-40c1-b227-5718bf74d4d2}">
+		<property name="position">
+			<value>0.0051929392446633822</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{fedf3270-8c6d-4bff-a715-46402d06e89e}">
+		<property name="position">
+			<value>0.29999999999999999</value>
+		</property>
+		<property name="value">
+			<value>24</value>
+		</property>
+	</object>
 </objects>
