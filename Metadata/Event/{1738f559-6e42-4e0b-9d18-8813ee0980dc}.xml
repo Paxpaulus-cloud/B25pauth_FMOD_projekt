@@ -83,7 +83,7 @@ https://www.fmod.com/docs/studio/authoring-events.html#automation-and-modulation
 			<destination>{c701e17c-3663-45e9-8d24-6377f99920fb}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{8303ec40-763a-44c3-93b9-3468e8774b84}</destination>
+			<destination>{a4cad976-6bb9-41b8-a518-d066dad41750}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{d716f988-97a4-4eff-8bed-81ea349d177b}">

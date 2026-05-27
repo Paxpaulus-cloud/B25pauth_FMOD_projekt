@@ -108,7 +108,7 @@ Explosion samples by Michel Baradari available at https://opengameart.org/conten
 			<destination>{5d4d3f0b-8cc9-4eb5-9f50-d04da6055cad}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{8303ec40-763a-44c3-93b9-3468e8774b84}</destination>
+			<destination>{a4cad976-6bb9-41b8-a518-d066dad41750}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{31f3fc8f-e863-4646-afbc-7d91a94751c0}">

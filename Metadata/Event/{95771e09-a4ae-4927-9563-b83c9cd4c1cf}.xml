@@ -66,7 +66,7 @@ https://www.fmod.com/docs/studio/working-with-instruments.html#single-instrument
 			<destination>{4422e6d5-8e51-4737-974d-5e77bcb47793}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{8303ec40-763a-44c3-93b9-3468e8774b84}</destination>
+			<destination>{a4cad976-6bb9-41b8-a518-d066dad41750}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{2d315adb-0422-41e9-819b-d5a0c99b5aa5}" />
