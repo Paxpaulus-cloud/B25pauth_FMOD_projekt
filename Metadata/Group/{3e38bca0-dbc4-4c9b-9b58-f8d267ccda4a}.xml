@@ -4,6 +4,9 @@
 		<property name="name">
 			<value>Stingers</value>
 		</property>
+		<relationship name="masters">
+			<destination>{adcd6ae6-1762-4603-a4b5-a136110ec054}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{f9cdf4c4-bb9f-4842-8e75-bfdd40433eb2}</destination>
 		</relationship>
@@ -17,8 +20,10 @@
 	<object class="MixerBusEffectChain" id="{f9cdf4c4-bb9f-4842-8e75-bfdd40433eb2}">
 		<relationship name="effects">
 			<destination>{34c696ac-29bf-4262-84a8-e010a2877837}</destination>
+			<destination>{51fc057b-6425-451e-b28b-01d0ea2ed802}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4dc49cdf-f9c8-461e-87d6-7e3d01d7644e}" />
 	<object class="MixerBusFader" id="{34c696ac-29bf-4262-84a8-e010a2877837}" />
+	<object class="Sidechain" id="{51fc057b-6425-451e-b28b-01d0ea2ed802}" />
 </objects>
