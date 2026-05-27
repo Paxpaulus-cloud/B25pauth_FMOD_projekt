@@ -2,7 +2,12 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{12a7cd29-2504-458a-bbe3-2ee751b2c307}">
 		<property name="note">
-			<value>Vertical Event parametre 0=off. 1=1 etc</value>
+			<value>Vertical Event parametre 0=off. 1=1 etc
+
+---Vertical Event---
+0 - Audio 1 playing
+1 Audio 2 added
+2 Audio 3 added, Audio 2 removed</value>
 		</property>
 		<property name="name">
 			<value>Vertical Event</value>
