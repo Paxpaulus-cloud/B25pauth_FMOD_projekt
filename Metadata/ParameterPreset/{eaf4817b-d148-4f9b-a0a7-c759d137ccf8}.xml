@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{eaf4817b-d148-4f9b-a0a7-c759d137ccf8}">
+		<property name="name">
+			<value>3D Event</value>
+		</property>
+		<relationship name="folder">
+			<destination>{f55a2e30-eeb8-4a80-bd54-19b543c33371}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{f679e92b-f664-446c-8a19-1afa0cd0771c}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{f679e92b-f664-446c-8a19-1afa0cd0771c}">
+		<property name="parameterType">
+			<value>10</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
