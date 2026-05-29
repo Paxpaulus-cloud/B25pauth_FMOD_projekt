@@ -18,9 +18,17 @@
 		<relationship name="automators">
 			<destination>{3e928553-b6e0-43a0-9d9d-f6fbc873433f}</destination>
 		</relationship>
+		<relationship name="modulators">
+			<destination>{055eb343-0e3b-4c53-8f1a-0b76a21457d5}</destination>
+		</relationship>
 	</object>
 	<object class="Automator" id="{3e928553-b6e0-43a0-9d9d-f6fbc873433f}">
 		<property name="nameOfPropertyBeingAutomated">
+			<value>cursorPosition</value>
+		</property>
+	</object>
+	<object class="SeekModulator" id="{055eb343-0e3b-4c53-8f1a-0b76a21457d5}">
+		<property name="nameOfPropertyBeingModulated">
 			<value>cursorPosition</value>
 		</property>
 	</object>
