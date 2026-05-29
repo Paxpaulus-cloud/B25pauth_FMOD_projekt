@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="ParameterPreset" id="{7d30f475-dc0f-4f5f-8ea4-24a4d3ca2a0d}">
 		<property name="name">
-			<value>Horizontal Event</value>
+			<value>Horizontal Event Parametre</value>
 		</property>
 		<relationship name="folder">
 			<destination>{f55a2e30-eeb8-4a80-bd54-19b543c33371}</destination>

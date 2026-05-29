@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{6884f65f-1c8c-418f-9d1a-debd0de8a7e6}">
 		<property name="note">
-			<value>Horizontal Event Parametre. 0.50 = Loop A etc</value>
+			<value>Horizontal Event Parametre. below 0.51 = Loop A plays. above 0.51 loop B plays. Mood parametre triggers stingers</value>
 		</property>
 		<property name="name">
 			<value>Horizontal Event</value>
@@ -80,8 +80,8 @@
 	</object>
 	<object class="GroupTrack" id="{4962b77b-05fc-465e-9f28-9fe1cdd89114}">
 		<relationship name="modules">
-			<destination>{bb6e7f56-5a96-4eef-97a1-d1a5f0132ae6}</destination>
 			<destination>{d3b2b506-f56c-4430-a1c9-8507020a8c24}</destination>
+			<destination>{bb6e7f56-5a96-4eef-97a1-d1a5f0132ae6}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{0ad9ee6f-4bc9-444d-90b6-62f19577dc14}</destination>
@@ -150,23 +150,9 @@
 			<destination>{33983ab7-f183-4da1-affa-dbe386201cc9}</destination>
 		</relationship>
 	</object>
-	<object class="EventSound" id="{bb6e7f56-5a96-4eef-97a1-d1a5f0132ae6}">
-		<property name="length">
-			<value>26</value>
-		</property>
-		<property name="quantizationInterval">
-			<value>5</value>
-		</property>
-		<relationship name="triggerConditions">
-			<destination>{b4c6a8bd-b508-4e07-8710-a95e1266b23a}</destination>
-		</relationship>
-		<relationship name="event">
-			<destination>{1f47b8fd-75e5-436d-8ab1-1b395e486e5d}</destination>
-		</relationship>
-	</object>
 	<object class="EventSound" id="{d3b2b506-f56c-4430-a1c9-8507020a8c24}">
 		<property name="length">
-			<value>26</value>
+			<value>28.800000000000001</value>
 		</property>
 		<property name="quantizationInterval">
 			<value>5</value>
@@ -176,6 +162,20 @@
 		</relationship>
 		<relationship name="event">
 			<destination>{225e0f78-d83f-4a16-98d2-a08a7abc5722}</destination>
+		</relationship>
+	</object>
+	<object class="EventSound" id="{bb6e7f56-5a96-4eef-97a1-d1a5f0132ae6}">
+		<property name="length">
+			<value>28.800000000000001</value>
+		</property>
+		<property name="quantizationInterval">
+			<value>5</value>
+		</property>
+		<relationship name="triggerConditions">
+			<destination>{b4c6a8bd-b508-4e07-8710-a95e1266b23a}</destination>
+		</relationship>
+		<relationship name="event">
+			<destination>{1f47b8fd-75e5-436d-8ab1-1b395e486e5d}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{0ad9ee6f-4bc9-444d-90b6-62f19577dc14}">
@@ -304,23 +304,23 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{79d3985a-1cba-4cf0-a5ce-d1b183265046}" />
-	<object class="ParameterCondition" id="{b4c6a8bd-b508-4e07-8710-a95e1266b23a}">
-		<property name="minimum">
-			<value>2</value>
-		</property>
-		<property name="maximum">
-			<value>2</value>
-		</property>
-		<relationship name="parameter">
-			<destination>{4a3b1b01-7ae4-47e3-97c6-a5a003a004e6}</destination>
-		</relationship>
-	</object>
 	<object class="ParameterCondition" id="{779771ee-2c9c-458b-ab5d-2e6cb1c3e9e7}">
 		<property name="minimum">
 			<value>1</value>
 		</property>
 		<property name="maximum">
 			<value>1</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{4a3b1b01-7ae4-47e3-97c6-a5a003a004e6}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterCondition" id="{b4c6a8bd-b508-4e07-8710-a95e1266b23a}">
+		<property name="minimum">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
 		</property>
 		<relationship name="parameter">
 			<destination>{4a3b1b01-7ae4-47e3-97c6-a5a003a004e6}</destination>
