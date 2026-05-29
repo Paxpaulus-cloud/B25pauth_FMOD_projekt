@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="ParameterPreset" id="{eaf4817b-d148-4f9b-a0a7-c759d137ccf8}">
 		<property name="name">
-			<value>3D Event</value>
+			<value>3D Event Parametre</value>
 		</property>
 		<relationship name="folder">
 			<destination>{f55a2e30-eeb8-4a80-bd54-19b543c33371}</destination>
